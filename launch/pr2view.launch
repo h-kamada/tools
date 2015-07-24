@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="image_view" type="image_view" name="image_rect_color">
+        <remap from="image" to="/kinect_head_c2/rgb/image_rect_color" />
+  </node>
+  <node pkg="image_view" type="image_view" name="fridge_debug_view">
+        <remap from="image" to="/openni/rgb/fridge_detector/debug_image" />
+  </node>
+</launch>

@@ -5,4 +5,7 @@
   <node pkg="image_view" type="image_view" name="fridge_debug_view">
         <remap from="image" to="/openni/rgb/fridge_detector/debug_image" />
   </node>
+  <node pkg="image_view" type="image_view" name="maskimage">
+        <remap from="image" to="/attention_clipper/output/mask" />
+  </node>
 </launch>
